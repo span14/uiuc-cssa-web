@@ -26,7 +26,7 @@ var getQueryString = function (name) {
 };
 
 function fill(arr) {
-    console.log("fill "+arr);
+//    console.log("fill "+arr);
     document.getElementById("division_name").innerHTML += arr[0];
     document.getElementById("division_name2").innerHTML = arr[0];
     document.getElementById("intro").innerHTML = arr[1];
@@ -40,7 +40,19 @@ function main() {
     console.log("main");
     switch (getQueryString('d')) {
         case "tab_board":
-            fill(tab_board);
+//            fill(tab_board);
+            $.ajax({
+                type: "GET", url: "../assets/image/member/board16.csv", success: function (file) {
+                Papa.parse(file, {
+                complete: function(results) {
+//                    console.log("Finished:", results.data);
+                    results.data.forEach(function(e){
+                        if(e[0])
+                            card = $("#memberList").append("<div class='card'><p class='title'>"+e[0]+"</p><p>"+e[1]+"</p></div>");
+                    })
+                }
+                });
+            }});
             break;
         case "tab_undergrad":
             fill(tab_undergrad);

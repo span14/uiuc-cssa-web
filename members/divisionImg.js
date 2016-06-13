@@ -95,7 +95,7 @@ function UrlExists(url)
 function arrangeList(result,departmentName){
 
     list = $.csv.toArrays(result);
-    console.log(list);
+//    console.log(list);
     var memberList = document.getElementById("memberList");
     var row = getQueryString('id');
     if (list[row] != undefined) {
