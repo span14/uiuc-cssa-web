@@ -1,0 +1,76 @@
+body {
+    background-image: url("image/background_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#entire {
+    position: absolute;
+    bottom: 50px;
+}
+
+#entire div {
+    float: left;
+}
+
+#title{
+    color: #fff;
+    font: normal bold 36px Arial;
+    text-align: center;
+    margin: 15px auto;
+}
+
+ul#countdown {
+    margin: 10px auto;
+    padding: 0;
+}
+
+ul#countdown li{
+    background-color: #333333;
+    border: 2px solid;
+    color: #ffffff;
+    display: inline;
+    float: left;
+    font: normal bold 36px Arial;
+    letter-spacing: 5px;
+    margin-left: 5px;
+    text-align: center;
+    width: 60px;
+    border-radius: 6px;
+    box-shadow: 0 0 3px #777;
+}
+
+ul#countdown span{
+    padding-left: 5px;
+}
+
+ul#countdown p.timeRef {
+    font: normal normal 12px Arial;
+    letter-spacing: 0px;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+#link {
+    font: normal bold 12px Arial;
+    text-align: center;
+    margin-top: 60px;
+    padding-left: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+a:link {
+    color: #fff;
+}
+ 
+a:visited {
+    color: #fff;
+}
+
+a:active {
+    color: rgba(39, 24, 124, 0.57);
+}
+
+
