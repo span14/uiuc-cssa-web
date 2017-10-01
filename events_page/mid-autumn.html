@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>CSSA中秋</title>
+    <meta name="description" content="CSSA">
+    <link  rel="stylesheet"  type="text/css" href="assets/countdown.css">
+    <script type="text/javascript" src="assets/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/countdown.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#countdown").countdown({
+                date: "30 September 2017 18:30:00",
+                time: 3,
+            }, function(){
+                alert("中秋晚会已经开始!!!");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="entire">
+        <div id="title">
+            <span>十里月缘，离CSSA中秋晚会还有</span>
+        </div>
+        <div id="clock">
+            <ul id="countdown">
+                <li>
+                    <span class="days">00</span>
+                    <p class="timeRef">天</p>
+                </li>
+                <li>
+                    <span class="hours">00</span>
+                    <p class="timeRef">时</p>
+                </li>
+                <li>
+                    <span class="minutes">00</span>
+                    <p class="timeRef">分</p>
+                </li>
+                <li>
+                    <span class="seconds">00</span>
+                    <p class="timeRef">秒</p>
+                </li>
+            </ul>
+        </div>
+        <div id = "link">
+            <a href="index_1.html">在<b id="turn">3</b>秒内跳转</a>
+        </div>
+    </div>
+    
+</body>
+
+</html>
